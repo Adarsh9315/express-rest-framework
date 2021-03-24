@@ -12,8 +12,8 @@ const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     auth: {
-        user: "adarshkumar9315@gmail.com",
-        pass: "shoekonnect"
+        user: "test@gmail.com",
+        pass: "test123"
     }
 });
 
@@ -115,7 +115,7 @@ const emailConfirmation = async (req: Request, res: Response, next: NextFunction
 
     const link = `http://localhost:4200/verify_email/?id=${rand}`
     const mailOptions = {
-        from: '"Leagues of Games Team" <adarshkumar9315@gmail.com>',
+        from: '"Leagues of Games Team" <test@gmail.com>',
         to: email,
         subject: "Please confirm your Email account",
         html: "Hello,<br> Please Click on the link to verify your email.<br><a href=" + link + ">Click here to verify</a>"
