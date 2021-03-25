@@ -8,14 +8,14 @@ import randomString from '../common/common'
 const NAMESPACE = 'Emailer';
 
 
-const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    auth: {
-        user: "test@gmail.com",
-        pass: "test123"
-    }
-});
+// const transporter = nodemailer.createTransport({
+//     host: "smtp.gmail.com",
+//     port: 465,
+//     auth: {
+//         user: "test@gmail.com",
+//         pass: "test123"
+//     }
+// });
 
 
 
